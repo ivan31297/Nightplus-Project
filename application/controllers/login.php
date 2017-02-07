@@ -9,15 +9,21 @@ class Login extends CI_Controller {
 
 	public function login()
 	{
-		$this->cedula    = $_POST['cedula']; // please read the below note
-        $this->password  = $_POST['password'];
-        $this->load->model('AccesoModel');
-        $result=$this->AccesoModel->login($cedula, $password);
-        if ($result===1) {
-        	$this->load->view('principal');
-        }else{
-        	echo "Datos incorrectos";
+                if ((isset($_POST['cedula']) && isset($_POST['password']))&&($_POST['cedula']!=null
+                        || $_POST['password']!=null)) {
+                        $this->cedula    = $_POST['cedula'];
+                        $this->password  = $_POST['password'];
+                        $this->load->model('AccesoModel');
+                        $result=$this->AccesoModel->login($cedula, $password);
+                        if ($result===1) {
+                                $this->load->view('principal');
+                        }else{
+                                echo "Datos incorrectos";
+                        }
+                        $this->load->controller('Login');
+                }else{
+                        echo "-1";
+                }
+                
         }
-        $this->load->controller('Login');
-	}
 }
