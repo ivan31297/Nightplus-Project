@@ -1,0 +1,470 @@
+html{
+	height: 100%;
+	font-family: "Roboto";
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+a:hover{
+	cursor: pointer; 
+}
+
+i{
+	cursor: pointer;
+}
+
+input{
+	outline: none;
+}
+
+header{
+	padding: 10px;
+	background: #1E78FF;
+	height: 40px;
+}
+
+header h3{
+	margin: 5px;
+	color: #fff;
+}
+
+header #btnDesconectar{
+	float: right;
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	margin-top: -30px;
+	margin-right: 15px;
+}
+
+.content-form{
+	margin: 10px auto 0 auto;
+	background: #fff;
+	padding: 25px 30px;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.71);
+}
+
+.title-section{
+	margin: 10% auto 0 auto;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 0px;
+}
+
+.title-section.register-title{
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 0;
+	font-size: 35px;
+}
+
+.info-register{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 50%;
+	padding-left: 55px;
+}
+
+.info-register p{
+	color: #fff;
+	margin: 0;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.info-register span{
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.info-register a{
+	text-decoration: none;
+}
+
+.info-register label{
+	color: #fff;
+	background: #1E78FF;
+	font-size: 20px;
+	padding: 5px 25px;
+	cursor: pointer;
+}
+
+#login-register{
+	margin-top: 100px;
+}
+
+
+/* Login style and rgister style */
+#alert-error, #alert-error-register{
+	display: none;
+	color: #fe2b2b;
+	padding: 5px;
+	margin: 0;
+	font-weight: 100;
+}
+
+.content-form.login-content{
+	width: 350px;
+}
+
+.content-form.register-content{
+	width: 400px;
+	float: right;
+	margin-right: 50px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.input-content{
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0;
+	margin: 1px 0;
+}
+
+.input-content label{
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: 100;
+	color: #828282;
+	display: block;
+}
+
+.input-content input{
+	width: 100%;
+	padding: 3px 0;
+	border: 0;
+	font-size: 15px;
+	font-weight: 500;
+	color: #424242;
+}
+
+.input-content select{
+	width: 100%;
+	border: 0px none;
+}
+
+.button-content{
+	text-align: center;
+	padding: 10px 0;
+}
+
+.button-content input{
+	font-size: 17px;
+	border: 0;
+	background: #1E78FF;
+	padding: 5px 60px;
+	color: #fff;
+	font-weight: 700;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.extra-content{
+	margin: 15px 0;
+	text-align: center;
+}
+
+.extra-content span{
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+/* End login style */
+
+.modal_oferta{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_subasta{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	padding: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ADMIN style */
+.main-content{
+
+}
+
+.main-content .content-forms{
+	padding: 10px;
+    background: #F7F7F7;
+}
+
+.main-content .content-forms .section-item-form:first-child{
+	border-left: none;
+}
+
+.main-content .content-forms .section-item-form{
+	 width: 30%;
+	 display: inline-block;
+	 vertical-align: top;
+	 padding: 8px 1.5%;
+	 border-left: 1px solid #ccc;
+	 min-height: 180px;
+ }
+
+.main-content .content-forms .section-item-form-report{
+	width: 97%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 1.5%;
+	border-left: 1px solid #ccc;
+	min-height: 39px;
+}
+
+.main-content .content-forms .section-item-form .section-title{
+	margin: 0;
+    font-weight: 400;
+    color: #1E78FF;
+    font-size: 16px;
+}
+
+.main-content .content-forms .section-item-form form select{
+	width: 99% !important;
+}
+
+.main-content .content-forms .section-item-form form .alert{
+	background: rgba(59, 255, 65, 0.45);
+    padding: 5px;
+    border: 1px solid rgba(0, 255, 43, 0.35);
+    color: #fff;
+    display: none;
+}
+
+.main-content .content-forms .section-item-form form input.btn-item{
+	width: 99%;
+    border: 0;
+    background: #757575;
+    font-size: 16px;
+    color: #fff;
+}
+
+.main-content .content-forms .section-item-form-report form input.btn-item{
+	width: 13%;
+	border: 0;
+	background: #757575;
+	font-size: 16px;
+	color: #fff;
+}
+
+.main-content .content-forms .section-item-form form input, .main-content .content-forms .section-item-form form select, .main-popup form select, .main-popup form input{
+	font-size: 15px;
+    margin: 5px 0;
+    width: 96%;
+    padding: 9px 5px;
+    border: 1px solid rgba(204, 204, 204, 0.88);
+    border-radius: 5px;
+}
+
+.main-content .content-forms .section-item-form-report form input, .main-content .content-forms .section-item-form form select, .main-popup form select, .main-popup form input{
+	font-size: 15px;
+	margin: 5px 0;
+	width: 96%;
+	padding: 9px 5px;
+	border: 1px solid rgba(204, 204, 204, 0.88);
+	border-radius: 5px;
+}
+
+
+
+.main-title{
+	border-bottom: 1px solid #ccc;
+    font-size: 19px;
+    margin: 0;
+    font-weight: 400;
+    padding: 10px;
+    color: #424242;
+    background: #F1F1F1;
+}
+
+/* ADMIN end¨*/
+
+/* PROVEEDOR style */
+.bottom-table{
+	padding: 20px;
+}
+
+.main-content .column-2{
+	width: 98%;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.title-colum-2{
+	margin: 0;
+    border-bottom: 2px solid #1B4F9C;
+    border-top: 2px solid #1B4F9C;
+    color: #FFFFFF;
+    background: rgb(30, 120, 255);
+    font-weight: 400;
+    padding: 7px;
+}
+
+.main-content .column-2 table{
+	width: 100%;
+    border-collapse: collapse;
+}
+
+.main-content .column-2 table tr:first-child{
+	background: rgba(204, 204, 204, 0.22);
+    color: rgba(66, 66, 66, 0.86);
+    font-weight: 600;
+    border-bottom: 0;
+}
+
+.main-content .column-2 table tr{
+	border-bottom: 1px solid rgba(204, 204, 204, 0.39);
+}
+
+.main-content .column-2 table tr td{
+	padding: 10px;
+}
+
+.main-content .column-2 table tr td.align-center{
+	text-align: center;
+}
+
+.main-content .column-2 table tr td i{
+	font-size: 20px;
+    color: #2F68BD;
+}
+/* PROVEEDOR end */
+
+/* Company style */
+#main-company .content-forms .section-item-form{
+	min-height: 105px;
+}
+
+#main-admin .content-forms .section-item-form{
+	min-height: 105px;
+}
+
+#main-company .content-forms .section-item-form form input, #main-company .content-forms .section-item-form form select{
+	width: 24% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#main-admin .content-forms .section-item-form form input, #main-company .content-forms .section-item-form form select{
+	width: 24% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#main-company .content-forms .section-item-form form input.btn-item{
+	float: right;
+    margin-right: 17px;
+    width: 20% !important;
+}
+
+#main-company .content-forms .section-item-form-report form input.btn-item{
+	float: left;
+	margin-right: 17px;
+	width: 13% !important;
+}
+
+#main-admin .content-forms .section-item-form-report form input.btn-item{
+	float: left;
+	margin-right: 17px;
+	width: 13% !important;
+}
+
+#main-admin .content-forms .section-item-form-report.form-report-admin form input.btn-item{
+	width: 100% !important;
+}
+
+
+#main-provedor .content-forms .section-item-form-report form input.btn-item{
+	float: left;
+	margin-right: 17px;
+	width: 13% !important;
+}
+
+#main-company .content-forms .section-item-form{
+	width: 97% !important;
+}
+
+/* Company end */
+.main-popup{
+	display: none;
+}
+
+.content-popup{
+	width:45%; 
+	background:#fff;
+	margin: 15% auto 0 auto;
+}
+
+.main-popup form select.item-popup{
+	width: 49%;
+
+}
+
+.main-popup form .item-popup{
+	width: 47%;
+}
+
+.main-popup form p{
+	margin: 0;
+}
+
+.main-popup form{
+	width: 95%;
+    padding: 15px;
+    height: 100%;
+}
+
+.btn-item.btn-popup{
+	width: 32.5%;
+    background: #1E78FF;
+    color: #fff;
+    border: 0;
+}
+
+.main-popup.modal_oferta .content-popup{
+	width: 20%;
+}
+
+.main-popup.modal_oferta .content-popup form input{
+	width: 88%;
+}
+
+.main-popup.modal_oferta .content-popup form input.btn-popup{
+	width: 93%;
+}
+
+.radio-item{
+	width: 20px !important;
+}
+
+.section-item-form-report.form-report-admin form{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+}
+
